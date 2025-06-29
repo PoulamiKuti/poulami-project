@@ -1,0 +1,253 @@
+.map-sec {
+    position: relative;
+    figure {
+        @media only screen and (max-width: 767px) {
+            height: 300px;
+        }
+        img {
+            width: 100%;
+            @media only screen and (max-width: 767px) {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    .map-innr {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+        .location-box {
+            .location-box-innr {
+                background: $colorff;
+                @media only screen and (max-width: 767px) {
+                    background: none;
+                }
+            }
+            .location-select-wrap {
+                max-width: calc(100% - 244px);
+                flex-basis: calc(100% - 244px);
+                @media only screen and (max-width: 767px) {
+                    max-width: 100%;
+                    flex-basis: 100%;
+                }
+            }
+            .btn {
+                max-width: 244px;
+                flex-basis: 244px;
+                min-width: 244px;
+                @media only screen and (max-width: 767px) {
+                    max-width: 100%;
+                    flex-basis: 100%;
+                }
+            }
+        }
+    }
+}
+.experience-sec {
+    h2 {
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+        &.shp-img {
+            &.right {
+                &:after {
+                    right: -42px;
+                    top: -30px;
+                    @media only screen and (max-width: 767px) {
+                        right: -10px;
+                        width: 35px;
+                        height: 45px;
+                    }
+                }
+            }
+        }
+    }
+}
+.contact-left {
+    padding-right: 90px;
+    @media only screen and (max-width: 1699px) {
+        padding-right: 50px;
+    }
+    @media only screen and (max-width: 767px) {
+        padding-right: 15px;
+        text-align: center;
+    }
+    p {
+        margin-bottom: 15px;
+    }
+    h2 {
+        margin-bottom: 12px;
+    }
+    .contact-details {
+        margin-bottom: 16px;
+        li {
+            margin-bottom: 16px;
+            list-style-type: none;
+            a {
+                text-decoration: none;
+                color: #202020;
+                font-size: 18px;
+                @extend .flex;
+                @media only screen and (max-width: 991px) {
+                    font-size: 15px;
+                }
+                @media only screen and (max-width: 767px) {
+                    justify-content: center;
+                }
+                &:hover {
+                    color: $color3d;
+                }
+                span {
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 100%;
+                    @extend .flex-center;
+                    background: #dde5b6;
+                    margin-right: 13px;
+                    color: $color71;
+                    font-size: 17px;
+                }
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+.contact-right {
+    padding-left: 90px;
+    @media only screen and (max-width: 1699px) {
+        padding-left: 50px;
+    }
+    @media only screen and (max-width: 991px) {
+        padding-left: 15px;
+        margin-top: 30px;
+    }
+    @media only screen and (max-width: 767px) {
+        text-align: center;
+        padding-bottom: 60px;
+    }
+    h2 {
+        margin-bottom: 30px;
+    }
+    .btn {
+        min-width: 194px
+    }
+}
+.social-icon-details {
+    @extend .flex;
+    margin: 0;
+    @media only screen and (max-width: 767px) {
+        justify-content: center;
+    }
+    li {
+        margin-right: 13px;
+        list-style-type: none;
+        &:last-child {
+            margin-right: 0;
+        }
+        a {
+            width: 42px;
+            height: 42px;
+            border-radius: 100%;
+            @extend .flex-center;
+            background: #dde5b6;
+            color: $color71;
+            font-size: 20px;
+        }
+    }
+}
+.file-input {
+    position: relative;
+    .file-input-wrapper {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        input[type="file"] {
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            overflow: hidden;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+        label {
+            color: $color71;
+            @media only screen and (max-width: 575px) {
+                font-size: 11px;
+            }
+            span {
+                cursor: pointer;
+                display: inline-flex;
+                align-items: center;   
+                justify-content: center; 
+                color: $colorea;
+                padding: 14px;
+                background-color: $color71;
+                line-height: 0.8;
+                margin-left: 12px;
+                @media only screen and (max-width: 575px) {
+                    margin-left: 6px;
+                    padding: 14px 10px;
+                }
+            }
+        }
+    }
+}
+
+.bike-shape {
+    position: absolute;
+    bottom: -11%;
+    left: 26%;
+    @media only screen and (max-width: 1699px) {
+        width: 320px;
+        bottom: -9%;
+    }
+    @media only screen and (max-width: 1199px) {
+        width: 250px;
+        bottom: -7%;
+    }
+    @media only screen and (max-width: 767px) {
+        width: 200px;
+        bottom: -4%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+}
+.contact-form {
+    position: relative;
+    .shape11 {
+        position: absolute;
+        bottom: 0;
+        right: -13%;
+        @media only screen and (max-width: 1199px) {
+            right: -10px;
+            width: 50px;
+        }
+    }
+}
+.contact-txt {
+    position: relative;
+    .shape12 {
+        position: absolute;
+        right: 30px;
+        top: 20px;
+        @media only screen and (max-width: 1699px) {
+            right: 0;
+        }
+        @media only screen and (max-width: 1199px) {
+            top: 0;
+            right: -20px;
+            width: 40px;
+        }
+    }
+}

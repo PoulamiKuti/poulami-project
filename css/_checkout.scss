@@ -1,0 +1,317 @@
+.checkout-left {
+    padding-right: 120px;
+    @media only screen and (max-width: 1699px) {
+        padding-right: 80px;
+    }
+    @media only screen and (max-width: 1300px) {
+        padding-right: 40px;
+    }
+    @media only screen and (max-width: 1199px) {
+        padding-right: 15px;
+        margin-bottom: 30px;
+    }
+}
+.checkout-back {
+    background: $colord0;
+    .checkout-hdr {
+        background: #dde5b6;
+        padding: 16px 25px;
+        h4 {
+            margin-bottom: 0;
+        }
+    }
+    .shipping-details-wrapper {
+        padding: 35px;
+        @media only screen and (max-width: 1699px) {
+            padding: 25px;
+        }
+        @media only screen and (max-width: 767px) {
+            padding: 15px;
+        }
+        .btn {
+            @media only screen and (max-width: 575px) {
+                min-width: 100%;
+            }
+        }
+    }
+}
+.radio-box {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    li {
+        margin-right: 30px;
+        list-style-type: none;
+        @media only screen and (max-width: 767px) {
+            margin-right: 14px;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        .radio-input {
+            display: block;
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 0;
+            cursor: pointer;
+            font-size: 16px;
+            color: $color71;
+            font-weight: 600;
+            user-select: none;
+            @media only screen and (max-width: 991px) {
+                font-size: 13px;
+            }
+            span {
+                color: $color3d;
+            }
+            input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+            }
+            .checkmark {
+                position: absolute;
+                top: 4px;
+                left: 0;
+                height: 15px;
+                width: 15px;
+                border: 1px solid $colorb7;
+                border-radius: 100%;
+                transition: all 0.6s;
+            }
+        }
+        .radio-input input:checked ~ .checkmark {
+            border-color: $color71;
+            background:$color71;
+        }
+    }
+}
+.shipping-details-form {
+    padding: 25px;
+    background: $colord6;
+    @media only screen and (max-width: 767px) {
+        padding: 15px;
+    }
+    textarea {
+        &.form-control {
+            height: 60px;
+            padding-top: 14px;
+            @media only screen and (max-width: 1699px) {
+                height: 50px;
+            }
+        }
+    }
+    .btn {
+        @media only screen and (max-width: 575px) {
+            min-width: 100%;
+        }
+    }
+}
+.select-delivery {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    @media only screen and (max-width: 991px) {
+        display: block;
+    }
+    @media only screen and (max-width: 767px) {
+        margin-bottom: 25px;
+    }
+    .select-delivery-innr {
+        display: flex;
+        align-items: center;
+        @media only screen and (max-width: 991px) {
+            margin-top: 15px;
+        }
+        @media only screen and (max-width: 767px) {
+            display: block;
+        }
+        .radio-box {
+            li {
+                margin-right: 16px;
+                @media only screen and (max-width: 1699px) {
+                    margin-right: 10px;
+                }
+                label {
+                    @media only screen and (max-width: 1699px) {
+                        font-size: 14px;
+                    }
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+        h5 {
+            font-size: 16px;
+            font-weight: 600;
+            color: $color71;
+            margin-bottom: 0;
+            text-transform: uppercase;
+            font-family: $primary-font;
+            margin-right: 20px;
+            @media only screen and (max-width: 1699px) {
+                font-size: 14px;
+                margin-right: 13px;
+            }
+            @media only screen and (max-width: 767px) {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+        }
+        p {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 0;
+            @media only screen and (max-width: 1699px) {
+                font-size: 14px;
+            }
+            a {
+                color: $color71;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+.frm-para {
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.shipping-details {
+    margin-bottom: 30px;
+}
+.edit {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $color71;
+    letter-spacing: 1px;
+}
+.payment-sec {
+    .info-para {
+        font-size: 14px;
+        margin-bottom: 25px;
+        a {
+            font-weight: 600;
+        }
+    }
+    h5 {
+        font-size: 20px;
+        color: $color71;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+        font-family: $primary-font;
+        @media only screen and (max-width: 991px) {
+            font-size: 16px;
+        }
+    }
+}
+.br-btm {
+    padding-bottom: 35px;
+    border-bottom: 1px solid $colorb7;
+    margin-bottom: 35px;
+    @media only screen and (max-width: 767px) {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+}
+.payment-method-innr {
+    p {
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        @media only screen and (max-width: 991px) {
+            font-size: 16px;
+        }
+        span {
+            margin-right: 18px;
+        }
+    }
+}
+.payment-address {
+    ul {
+        margin: 0;
+        li {
+            list-style-type: none;
+            margin-bottom: 4px;
+            font-size: 18px;
+            font-weight: 500;
+            @media only screen and (max-width: 991px) {
+                font-size: 16px;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+.arrives-date {
+    padding-top: 25px;
+    border-top: 1px solid $colorb7;
+    h5 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 25px;
+        color: $color2a;
+        font-family: $primary-font;
+        @media only screen and (max-width: 1699px) {
+            font-size: 15px;
+        }
+    }
+    .arrives-date-innr {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .arrives-date-left {
+            max-width: 70px;
+            flex-basis: 70px;
+        }
+        .arrives-date-right {
+            max-width: calc(100% - 70px);
+            flex-basis: calc(100% - 70px);
+            padding-left: 20px;
+            @media only screen and (max-width: 1699px) {
+                padding-left: 12px;
+            }
+            h6 {
+                color: $color2a;
+                font-family: $primary-font;
+                font-weight: 500;
+                font-size: 16px;
+                margin-bottom: 10px;
+                line-height: 22px;
+                @media only screen and (max-width: 1699px) {
+                    font-size: 13px;
+                }
+            }
+            p {
+                font-size: 14px;
+                margin-bottom: 0;
+                color: $colora4;
+                @media only screen and (max-width: 1699px) {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+.coupon-txt {
+    font-size: 14px;
+    margin-top: 20px;
+    @media only screen and (max-width: 1699px) {
+        font-size: 12px;
+    }
+    a {
+        font-weight: 600;
+    }
+}
